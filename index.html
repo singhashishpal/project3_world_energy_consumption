@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Consumption Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background_image.jpg'); /* Replace with the path to your transparent background image */
+            background-size: cover;
+            color: rgb(4, 4, 4);
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2); /* semi-transparent white for better readability */
+            border-radius: 10px;
+        }
+
+        .chart {
+            margin: 30px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Add custom styles to ensure interactivity */
+        .plotly-chart {
+            margin: 30px 0;
+        }
+    </style>
+
+    <!-- Plotly JS (for interactive charts) -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Energy Consumption Dashboard</h1>
+
+        <!-- Static Images -->
+        <div class="chart">
+            <h2>Energy Consumption by Source</h2>
+            <img src="Output\energy_consumption_by_source.png" alt="Energy Consumption by Source">
+        </div>
+
+        <div class="chart">
+            <h2>Hydro Consumption Over Time</h2>
+            <img src="Output\hydro_consumption.png" alt="Hydro Consumption Over Time">
+        </div>
+        <div class="chart"></div>
+            <h2>Hydro Share in Electricity</h2>
+            <img src="Output\Hydro_Share_in_Electricity_Top_5.png" alt="Hydro Share in Electricity">
+        </div>
+        <div class="chart"></div>
+            <h2>Nuclear Consumption</h2>
+            <img src="Output\nuclear_consumption.png" alt="Nuclear Consumption">
+        </div>
+        <div class="chart"></div>
+            <h2>Nuclear Share in Electricity</h2>
+            <img src="Output\Nuclear_Share_in_Electricity_Top_5.png" alt="Nuclear Share in Electricity">
+        </div>
+        <div class="chart"></div>
+            <h2>Solar Consumption</h2>
+            <img src="Output\solar_consumption.png" alt="Solar Consumption">
+        </div>
+        <div class="chart"></div>
+            <h2>Solar Share in Electricity</h2>
+            <img src="Output\Solar_Share_in_Electricity_Top_5.png" alt="Solar Share in Electricity">
+        </div>
+        <div class="chart"></div>
+            <h2>Nuclear and Hydro</h2>
+            <img src="Output\pairplot_top_5_countries.png" alt="Nuclear and Hydro">
+        </div>
+
+        <!-- Plotly Interactive Chart -->
+        <div class="plotly-chart">
+            <h2>Hydro Share of Electricity Over Time (Top 5 Countries)</h2>
+            <div id="interactive-hydro-share"></div> <!-- Div for the Plotly chart -->
+            <script>
+                // Sample Plotly chart code (update with your own Plotly data)
+                var data = [{
+                    x: [2005, 2010, 2015, 2020],
+                    y: [30, 40, 50, 60],
+                    mode: 'markers',
+                    type: 'scatter',
+                    marker: { size: [20, 40, 60, 80] },
+                    name: 'Country A'
+                }, {
+                    x: [2005, 2010, 2015, 2020],
+                    y: [20, 30, 40, 50],
+                    mode: 'markers',
+                    type: 'scatter',
+                    marker: { size: [15, 35, 55, 75] },
+                    name: 'Country B'
+                }];
+
+                var layout = {
+                    title: 'Hydro Share of Electricity Over Time',
+                    xaxis: { title: 'Year' },
+                    yaxis: { title: 'Hydro Share (%)' }
+                };
+
+                Plotly.newPlot('interactive-hydro-share', data, layout);
+            </script>
+        </div>
+
+        <div class="chart">
+            <h2>Nuclear vs Hydro Consumption (Top 5 Countries)</h2>
+            <img src="pairplot_top_5_countries.png" alt="Nuclear vs Hydro Consumption">
+        </div>
+
+    </div>
+</body>
+</html>
+
