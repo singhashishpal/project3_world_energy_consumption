@@ -6,7 +6,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('background_image.jpg'); /* Add the path to your background image here */
     background-size: cover; /* Ensures the image covers the entire background */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
     background-attachment: fixed; /* Keeps the background image fixed while scrolling */
