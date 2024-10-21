@@ -7,9 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            font-size:x-large;
             margin: 0;
             padding: 0;
-            background-image: url('background_image.jpg'); /* Replace with the path to your transparent background image */
             background-size: cover;
             color: rgb(4, 4, 4);
             text-align: center;
@@ -39,14 +39,10 @@
             margin: 0 auto;
         }
 
-        /* Add custom styles to ensure interactivity */
-        .plotly-chart {
-            margin: 30px 0;
-        }
+    
     </style>
 
-    <!-- Plotly JS (for interactive charts) -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -83,47 +79,24 @@
             <img src="Output\Solar_Share_in_Electricity_Top_5.png" alt="Solar Share in Electricity">
         </div>
         <div class="chart"></div>
-            <h2>Nuclear and Hydro</h2>
+            <h2>Solar and Hydro</h2>
             <img src="Output\pairplot_top_5_countries.png" alt="Nuclear and Hydro">
         </div>
-
-        <!-- Plotly Interactive Chart -->
-        <div class="plotly-chart">
-            <h2>Hydro Share of Electricity Over Time (Top 5 Countries)</h2>
-            <div id="interactive-hydro-share"></div> <!-- Div for the Plotly chart -->
-            <script>
-                // Sample Plotly chart code (update with your own Plotly data)
-                var data = [{
-                    x: [2005, 2010, 2015, 2020],
-                    y: [30, 40, 50, 60],
-                    mode: 'markers',
-                    type: 'scatter',
-                    marker: { size: [20, 40, 60, 80] },
-                    name: 'Country A'
-                }, {
-                    x: [2005, 2010, 2015, 2020],
-                    y: [20, 30, 40, 50],
-                    mode: 'markers',
-                    type: 'scatter',
-                    marker: { size: [15, 35, 55, 75] },
-                    name: 'Country B'
-                }];
-
-                var layout = {
-                    title: 'Hydro Share of Electricity Over Time',
-                    xaxis: { title: 'Year' },
-                    yaxis: { title: 'Hydro Share (%)' }
-                };
-
-                Plotly.newPlot('interactive-hydro-share', data, layout);
-            </script>
+        <div class="chart"></div>
+            <h2>Average Biofuel and Winf consumption</h2>
+            <img src="Output\Average Biofuel and Wind Consumption.jpg" alt="Nuclear and Hydro">
+        </div>
+        <div class="chart"></div>
+            <h2>Comparision of Electricity Demand, Generation and Share of Total Energy</h2>
+            <img src="Output\Comparision of Electricity Demand, Generation and Share of total energy.jpg" alt="Nuclear and Hydro">
+        </div>
+        <div class="chart"></div>
+            <h2>Global Events Impact (Covid)</h2>
+            <img src="Output\Global Events Impact.jpg" alt="Nuclear and Hydro">
         </div>
 
-        <div class="chart">
-            <h2>Nuclear vs Hydro Consumption (Top 5 Countries)</h2>
-            <img src="pairplot_top_5_countries.png" alt="Nuclear vs Hydro Consumption">
-        </div>
 
+        
     </div>
 </body>
 </html>
