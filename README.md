@@ -76,6 +76,7 @@ We used `folium` to provide geographic visualizations of energy consumption, whi
 - The project makes use of Folium for creating interactive maps to visualize energy consumption data by country. These maps allow users to zoom, pan, and explore specific data points in an intuitive way.
 - Additionally, other Python libraries such as Matplotlib and Plotly have been used to generate interactive line plots, bar charts, and bubble charts, allowing for deeper exploration of energy consumption trends over time.
 - Moving forward, we plan to expand these visualizations by adding more advanced features like popups and time sliders to allow users to filter data by year or energy type directly on the map.
+![Project3](Images/topo.jpg)
 
 ## Conclusion
 - This project successfully demonstrates a comprehensive approach to analyzing global energy consumption trends. By utilizing a variety of data visualization tools, we provided clear insights into the patterns of energy use across different regions and energy sources. The interactive maps created with folium, along with detailed statistical charts, offer users an engaging way to explore the data and derive meaningful insights.
