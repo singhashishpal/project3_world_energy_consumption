@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7bc60811ee96b8ec8fa8d82ea01e5dc1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7bc60811ee96b8ec8fa8d82ea01e5dc1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7bc60811ee96b8ec8fa8d82ea01e5dc1 = L.map(
+                "map_7bc60811ee96b8ec8fa8d82ea01e5dc1",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae458ea2bd0b8378b210c1e9c9ddccae = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {"attribution": "Map data: \u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors, \u003ca href=\"http://viewfinderpanoramas.org\"\u003eSRTM\u003c/a\u003e | Map style: \u0026copy; \u003ca href=\"https://opentopomap.org\"\u003eOpenTopoMap\u003c/a\u003e (\u003ca href=\"https://creativecommons.org/licenses/by-sa/3.0/\"\u003eCC-BY-SA\u003c/a\u003e)", "detectRetina": false, "maxNativeZoom": 17, "maxZoom": 17, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ae458ea2bd0b8378b210c1e9c9ddccae.addTo(map_7bc60811ee96b8ec8fa8d82ea01e5dc1);
+        
+    
+            var marker_a38911f60726b6b06cff60231d35274c = L.marker(
+                [-24.7761086, 134.755],
+                {}
+            ).addTo(map_7bc60811ee96b8ec8fa8d82ea01e5dc1);
+        
+    
+        var popup_f56bcb189e8a811119a82b48e66dc89e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42bfe000daae1f634137cfa9bcbb572d = $(`<div id="html_42bfe000daae1f634137cfa9bcbb572d" style="width: 100.0%; height: 100.0%;">Country: Australia<br>Population: 3,693,331.0<br>GDP: $23,931,176,960.0<br>Biofuel Consumption: nan TWh<br>Wind Consumption: nan TWh<br>Electricity Generation: nan TWh</div>`)[0];
+                popup_f56bcb189e8a811119a82b48e66dc89e.setContent(html_42bfe000daae1f634137cfa9bcbb572d);
+            
+        
+
+        marker_a38911f60726b6b06cff60231d35274c.bindPopup(popup_f56bcb189e8a811119a82b48e66dc89e)
+        ;
+
+        
+    
+    
+            var marker_d37a02d8777b75e22100d356cd2dd7e5 = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(map_7bc60811ee96b8ec8fa8d82ea01e5dc1);
+        
+    
+        var popup_83c14c651f0aa004093c87be7f96b43a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5ccb78f674c843c2f8a9ba3b2d4531c = $(`<div id="html_b5ccb78f674c843c2f8a9ba3b2d4531c" style="width: 100.0%; height: 100.0%;">Country: Canada<br>Population: 30,683,316.0<br>GDP: $1,138,677,121,024.0<br>Biofuel Consumption: nan TWh<br>Wind Consumption: nan TWh<br>Electricity Generation: nan TWh</div>`)[0];
+                popup_83c14c651f0aa004093c87be7f96b43a.setContent(html_b5ccb78f674c843c2f8a9ba3b2d4531c);
+            
+        
+
+        marker_d37a02d8777b75e22100d356cd2dd7e5.bindPopup(popup_83c14c651f0aa004093c87be7f96b43a)
+        ;
+
+        
+    
+    
+            var marker_123b815189989a68c5870a3995535755 = L.marker(
+                [51.1638175, 10.4478313],
+                {}
+            ).addTo(map_7bc60811ee96b8ec8fa8d82ea01e5dc1);
+        
+    
+        var popup_9e593aa49c315d8f211403f19e5a6ea3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4b1bc8f4ca7cb541ab32b02ab7a1e9b = $(`<div id="html_b4b1bc8f4ca7cb541ab32b02ab7a1e9b" style="width: 100.0%; height: 100.0%;">Country: Germany<br>Population: 81,551,680.0<br>GDP: $2,741,356,986,368.0<br>Biofuel Consumption: nan TWh<br>Wind Consumption: nan TWh<br>Electricity Generation: nan TWh</div>`)[0];
+                popup_9e593aa49c315d8f211403f19e5a6ea3.setContent(html_b4b1bc8f4ca7cb541ab32b02ab7a1e9b);
+            
+        
+
+        marker_123b815189989a68c5870a3995535755.bindPopup(popup_9e593aa49c315d8f211403f19e5a6ea3)
+        ;
+
+        
+    
+    
+            var marker_1fd5653c38262af2b32654185d1ff2a0 = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(map_7bc60811ee96b8ec8fa8d82ea01e5dc1);
+        
+    
+        var popup_6323f4605416c23de10ebbba13c061b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8c996b4aadf226297df3b599f0d43e8 = $(`<div id="html_f8c996b4aadf226297df3b599f0d43e8" style="width: 100.0%; height: 100.0%;">Country: United States<br>Population: 282,398,560.0<br>GDP: $12,973,842,104,320.0<br>Biofuel Consumption: nan TWh<br>Wind Consumption: nan TWh<br>Electricity Generation: nan TWh</div>`)[0];
+                popup_6323f4605416c23de10ebbba13c061b6.setContent(html_f8c996b4aadf226297df3b599f0d43e8);
+            
+        
+
+        marker_1fd5653c38262af2b32654185d1ff2a0.bindPopup(popup_6323f4605416c23de10ebbba13c061b6)
+        ;
+
+        
+    
+    
+            var marker_06c3e4be9a27a16bccd26649929a062c = L.marker(
+                [22.3511148, 78.6677428],
+                {}
+            ).addTo(map_7bc60811ee96b8ec8fa8d82ea01e5dc1);
+        
+    
+        var popup_c6c4f45edd67824b8a8a32c75bc581fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5efe5c82c441631aad165094f8ec828b = $(`<div id="html_5efe5c82c441631aad165094f8ec828b" style="width: 100.0%; height: 100.0%;">Country: India<br>Population: 280,714,154.0<br>GDP: $271,697,494,016.0<br>Biofuel Consumption: nan TWh<br>Wind Consumption: nan TWh<br>Electricity Generation: nan TWh</div>`)[0];
+                popup_c6c4f45edd67824b8a8a32c75bc581fa.setContent(html_5efe5c82c441631aad165094f8ec828b);
+            
+        
+
+        marker_06c3e4be9a27a16bccd26649929a062c.bindPopup(popup_c6c4f45edd67824b8a8a32c75bc581fa)
+        ;
+
+        
+    
+    
+            var marker_8eb39c3ee394d83de8b480863deb0901 = L.marker(
+                [64.6863136, 97.7453061],
+                {}
+            ).addTo(map_7bc60811ee96b8ec8fa8d82ea01e5dc1);
+        
+    
+        var popup_67db4702e0f3584343956d1ddf4b392f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af80c71c9ad61d8faf8d6f7b065849b7 = $(`<div id="html_af80c71c9ad61d8faf8d6f7b065849b7" style="width: 100.0%; height: 100.0%;">Country: Russia<br>Population: 145,452,544.0<br>GDP: $3,524,075,192,320.0<br>Biofuel Consumption: nan TWh<br>Wind Consumption: nan TWh<br>Electricity Generation: nan TWh</div>`)[0];
+                popup_67db4702e0f3584343956d1ddf4b392f.setContent(html_af80c71c9ad61d8faf8d6f7b065849b7);
+            
+        
+
+        marker_8eb39c3ee394d83de8b480863deb0901.bindPopup(popup_67db4702e0f3584343956d1ddf4b392f)
+        ;
+
+        
+    
+</script>
+</html>

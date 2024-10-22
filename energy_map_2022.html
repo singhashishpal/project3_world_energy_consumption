@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d5208fa8a2114a7c9ba1653cbc596d50 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d5208fa8a2114a7c9ba1653cbc596d50" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d5208fa8a2114a7c9ba1653cbc596d50 = L.map(
+                "map_d5208fa8a2114a7c9ba1653cbc596d50",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_409894ed6f1311fdd2d727640afc9208 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_409894ed6f1311fdd2d727640afc9208.addTo(map_d5208fa8a2114a7c9ba1653cbc596d50);
+        
+    
+            var tile_layer_4a4832b6c31617fbdcea62e4aa2625b1 = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {"attribution": "Map data: \u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors, \u003ca href=\"http://viewfinderpanoramas.org\"\u003eSRTM\u003c/a\u003e | Map style: \u0026copy; \u003ca href=\"https://opentopomap.org\"\u003eOpenTopoMap\u003c/a\u003e (\u003ca href=\"https://creativecommons.org/licenses/by-sa/3.0/\"\u003eCC-BY-SA\u003c/a\u003e)", "detectRetina": false, "maxNativeZoom": 17, "maxZoom": 17, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4a4832b6c31617fbdcea62e4aa2625b1.addTo(map_d5208fa8a2114a7c9ba1653cbc596d50);
+        
+    
+            var marker_cb18128c4c290f7dc5d5ab1c96519e60 = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(map_d5208fa8a2114a7c9ba1653cbc596d50);
+        
+    
+            var icon_8ddd3a7c6761f8ea636b36ca0711c4d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb18128c4c290f7dc5d5ab1c96519e60.setIcon(icon_8ddd3a7c6761f8ea636b36ca0711c4d7);
+        
+    
+        var popup_ba8ce8be56954f562df7068566de9495 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_725cc236d3f7d8f8a300ba34557662f4 = $(`<div id="html_725cc236d3f7d8f8a300ba34557662f4" style="width: 100.0%; height: 100.0%;">     <strong>Country:</strong> Canada<br>     <strong>Year:</strong> 2022<br>     <strong>Coal Consumption:</strong> 2788.582 TWh<br>     <strong>Gas Consumption:</strong> 31629.277 TWh<br>     <strong>Oil Consumption:</strong> 30822.062 TWh     </div>`)[0];
+                popup_ba8ce8be56954f562df7068566de9495.setContent(html_725cc236d3f7d8f8a300ba34557662f4);
+            
+        
+
+        marker_cb18128c4c290f7dc5d5ab1c96519e60.bindPopup(popup_ba8ce8be56954f562df7068566de9495)
+        ;
+
+        
+    
+    
+            var marker_072422bae14085906c671d33b049a994 = L.marker(
+                [51.1638175, 10.4478313],
+                {}
+            ).addTo(map_d5208fa8a2114a7c9ba1653cbc596d50);
+        
+    
+            var icon_081bb4458fe998288c18aa5d8be15ebe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_072422bae14085906c671d33b049a994.setIcon(icon_081bb4458fe998288c18aa5d8be15ebe);
+        
+    
+        var popup_46b40fe3344dcd0c69aab3e746a98c77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cc11378d7ab33e11a6ea2dac9e99c76 = $(`<div id="html_9cc11378d7ab33e11a6ea2dac9e99c76" style="width: 100.0%; height: 100.0%;">     <strong>Country:</strong> Germany<br>     <strong>Year:</strong> 2022<br>     <strong>Coal Consumption:</strong> 7763.265 TWh<br>     <strong>Gas Consumption:</strong> 9270.737 TWh<br>     <strong>Oil Consumption:</strong> 14191.266 TWh     </div>`)[0];
+                popup_46b40fe3344dcd0c69aab3e746a98c77.setContent(html_9cc11378d7ab33e11a6ea2dac9e99c76);
+            
+        
+
+        marker_072422bae14085906c671d33b049a994.bindPopup(popup_46b40fe3344dcd0c69aab3e746a98c77)
+        ;
+
+        
+    
+    
+            var marker_2a501836a2b2a9b69dacaa0d6fbb9e3a = L.marker(
+                [36.5748441, 139.2394179],
+                {}
+            ).addTo(map_d5208fa8a2114a7c9ba1653cbc596d50);
+        
+    
+            var icon_cb16fc6c86d55bb9317bd54c7e891c41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2a501836a2b2a9b69dacaa0d6fbb9e3a.setIcon(icon_cb16fc6c86d55bb9317bd54c7e891c41);
+        
+    
+        var popup_9a393dd89db703b174f66c809c75b93a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a90dbccc82a55a8c063148939104351 = $(`<div id="html_1a90dbccc82a55a8c063148939104351" style="width: 100.0%; height: 100.0%;">     <strong>Country:</strong> Japan<br>     <strong>Year:</strong> 2022<br>     <strong>Coal Consumption:</strong> 11016.588 TWh<br>     <strong>Gas Consumption:</strong> 8107.861 TWh<br>     <strong>Oil Consumption:</strong> 14811.619 TWh     </div>`)[0];
+                popup_9a393dd89db703b174f66c809c75b93a.setContent(html_1a90dbccc82a55a8c063148939104351);
+            
+        
+
+        marker_2a501836a2b2a9b69dacaa0d6fbb9e3a.bindPopup(popup_9a393dd89db703b174f66c809c75b93a)
+        ;
+
+        
+    
+    
+            var marker_f922acc5a2ed5db04070f1efa1002809 = L.marker(
+                [23.6585116, -102.0077097],
+                {}
+            ).addTo(map_d5208fa8a2114a7c9ba1653cbc596d50);
+        
+    
+            var icon_3780ffb28bb181e6ce14263111e0bc1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f922acc5a2ed5db04070f1efa1002809.setIcon(icon_3780ffb28bb181e6ce14263111e0bc1d);
+        
+    
+        var popup_76f1c405b1c88dbad17dc9bb1480a5d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5904332ff5780010665ef8470d7f048f = $(`<div id="html_5904332ff5780010665ef8470d7f048f" style="width: 100.0%; height: 100.0%;">     <strong>Country:</strong> Mexico<br>     <strong>Year:</strong> 2022<br>     <strong>Coal Consumption:</strong> 547.351 TWh<br>     <strong>Gas Consumption:</strong> 7575.104 TWh<br>     <strong>Oil Consumption:</strong> 8971.466 TWh     </div>`)[0];
+                popup_76f1c405b1c88dbad17dc9bb1480a5d5.setContent(html_5904332ff5780010665ef8470d7f048f);
+            
+        
+
+        marker_f922acc5a2ed5db04070f1efa1002809.bindPopup(popup_76f1c405b1c88dbad17dc9bb1480a5d5)
+        ;
+
+        
+    
+    
+            var marker_f19e91a1d6f670b7a07d4e0d7f551c97 = L.marker(
+                [39.3260685, -4.8379791],
+                {}
+            ).addTo(map_d5208fa8a2114a7c9ba1653cbc596d50);
+        
+    
+            var icon_7165468b6de48a533f132da248358a77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f19e91a1d6f670b7a07d4e0d7f551c97.setIcon(icon_7165468b6de48a533f132da248358a77);
+        
+    
+        var popup_5b5a7e75c2950085b60d48f6fcbb4d69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_284d84cc831d054ee9636e457fa94972 = $(`<div id="html_284d84cc831d054ee9636e457fa94972" style="width: 100.0%; height: 100.0%;">     <strong>Country:</strong> Spain<br>     <strong>Year:</strong> 2022<br>     <strong>Coal Consumption:</strong> 986.387 TWh<br>     <strong>Gas Consumption:</strong> 6959.187 TWh<br>     <strong>Oil Consumption:</strong> 15516.564 TWh     </div>`)[0];
+                popup_5b5a7e75c2950085b60d48f6fcbb4d69.setContent(html_284d84cc831d054ee9636e457fa94972);
+            
+        
+
+        marker_f19e91a1d6f670b7a07d4e0d7f551c97.bindPopup(popup_5b5a7e75c2950085b60d48f6fcbb4d69)
+        ;
+
+        
+    
+    
+            var marker_ebbe75d4b30673c3d5fc6729adf5030a = L.marker(
+                [54.7023545, -3.2765753],
+                {}
+            ).addTo(map_d5208fa8a2114a7c9ba1653cbc596d50);
+        
+    
+            var icon_8969bef3bd6f538278ad50eb3039ef5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ebbe75d4b30673c3d5fc6729adf5030a.setIcon(icon_8969bef3bd6f538278ad50eb3039ef5d);
+        
+    
+        var popup_700a25ff3540f88b06dd01e3051e5cac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1e6a4b2ccac1501b62bd83bbe3124b1 = $(`<div id="html_f1e6a4b2ccac1501b62bd83bbe3124b1" style="width: 100.0%; height: 100.0%;">     <strong>Country:</strong> United Kingdom<br>     <strong>Year:</strong> 2022<br>     <strong>Coal Consumption:</strong> 869.846 TWh<br>     <strong>Gas Consumption:</strong> 10662.307 TWh<br>     <strong>Oil Consumption:</strong> 10976.965 TWh     </div>`)[0];
+                popup_700a25ff3540f88b06dd01e3051e5cac.setContent(html_f1e6a4b2ccac1501b62bd83bbe3124b1);
+            
+        
+
+        marker_ebbe75d4b30673c3d5fc6729adf5030a.bindPopup(popup_700a25ff3540f88b06dd01e3051e5cac)
+        ;
+
+        
+    
+    
+            var marker_256210a27a36a0cad0a530397010b4da = L.marker(
+                [39.7837304, -100.445882],
+                {}
+            ).addTo(map_d5208fa8a2114a7c9ba1653cbc596d50);
+        
+    
+            var icon_df3ae520c7ba6b184fa7c9cf76c40b2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_256210a27a36a0cad0a530397010b4da.setIcon(icon_df3ae520c7ba6b184fa7c9cf76c40b2d);
+        
+    
+        var popup_dcd3e36ee7d0647d8b0feaea1c8403c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02b20b2b1f3968619204e8473f506f0f = $(`<div id="html_02b20b2b1f3968619204e8473f506f0f" style="width: 100.0%; height: 100.0%;">     <strong>Country:</strong> United States<br>     <strong>Year:</strong> 2022<br>     <strong>Coal Consumption:</strong> 8103.174 TWh<br>     <strong>Gas Consumption:</strong> 26049.031 TWh<br>     <strong>Oil Consumption:</strong> 29683.652 TWh     </div>`)[0];
+                popup_dcd3e36ee7d0647d8b0feaea1c8403c9.setContent(html_02b20b2b1f3968619204e8473f506f0f);
+            
+        
+
+        marker_256210a27a36a0cad0a530397010b4da.bindPopup(popup_dcd3e36ee7d0647d8b0feaea1c8403c9)
+        ;
+
+        
+    
+    
+            var layer_control_1ea9147e1d7a7c4aa0150ac49afff3df_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_409894ed6f1311fdd2d727640afc9208,
+                    "opentopomap" : tile_layer_4a4832b6c31617fbdcea62e4aa2625b1,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_1ea9147e1d7a7c4aa0150ac49afff3df = L.control.layers(
+                layer_control_1ea9147e1d7a7c4aa0150ac49afff3df_layers.base_layers,
+                layer_control_1ea9147e1d7a7c4aa0150ac49afff3df_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d5208fa8a2114a7c9ba1653cbc596d50);
+
+        
+</script>
+</html>
